@@ -19,7 +19,8 @@
   "extensions": [
     "dbaeumer.vscode-eslint",
     "hollowtree.vue-pack",
-    "k--kato.intellij-idea-keybindings"
+    "k--kato.intellij-idea-keybindings",
+    "vuetifyjs.vuetify-vscode"
   ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
