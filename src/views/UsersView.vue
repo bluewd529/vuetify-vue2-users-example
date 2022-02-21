@@ -4,7 +4,7 @@
     <div class="d-flex justify-end pb-3">
       <v-btn class="mr-5 primary">Export</v-btn>
       <v-btn class="mr-5 primary">Import</v-btn>
-      <v-btn class="mr-2 primary">Add</v-btn>
+      <AddUserButton />
     </div>
     <v-data-table
       class="pt-5 elevation-1"
@@ -17,8 +17,12 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "@vue/composition-api";
+import AddUserButton from "@/components/AddUserButton";
 
 export default defineComponent({
+  components: {
+    AddUserButton,
+  },
   setup(props, { root }) {
     const headers = [
       { text: "ID", value: "id" },
